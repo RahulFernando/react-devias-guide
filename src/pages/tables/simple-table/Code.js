@@ -1,6 +1,11 @@
 import { CopyBlock, atomOneDark } from "react-code-blocks";
 
-import { form, general, address } from "src/data/forms/simple/codeblock";
+import {
+  container,
+  rows,
+  simpleTable,
+} from "src/data/tables/simple-table/codeblock";
+
 import Snippet from "../../../components/Snippet";
 
 const Code = () => {
@@ -8,7 +13,7 @@ const Code = () => {
     <Snippet>
       <CopyBlock
         language="jsx"
-        text={form}
+        text={container}
         showLineNumbers
         theme={atomOneDark}
         wrapLines={true}
@@ -16,7 +21,7 @@ const Code = () => {
       />
       <CopyBlock
         language="jsx"
-        text={general}
+        text={rows}
         showLineNumbers
         theme={atomOneDark}
         wrapLines={true}
@@ -24,7 +29,7 @@ const Code = () => {
       />
       <CopyBlock
         language="jsx"
-        text={address}
+        text={simpleTable}
         showLineNumbers
         theme={atomOneDark}
         wrapLines={true}

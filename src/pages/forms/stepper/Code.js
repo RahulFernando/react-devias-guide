@@ -1,4 +1,4 @@
-import { CopyBlock, dracula } from "react-code-blocks";
+import { CopyBlock, atomOneDark } from "react-code-blocks";
 
 import Snippet from "../../../components/Snippet";
 
@@ -11,7 +11,7 @@ const Code = () => {
         language="jsx"
         text={form}
         showLineNumbers
-        theme={dracula}
+        theme={atomOneDark}
         wrapLines={true}
         codeBlock
       />

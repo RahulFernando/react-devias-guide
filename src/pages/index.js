@@ -27,6 +27,17 @@ const getSections = (paletteMode) => [
       },
     ],
   },
+  {
+    title: "Data Display",
+    items: [
+      {
+        title: "Tables",
+        subtitle: "2 components",
+        image: `/assets/components/tables-${paletteMode}.png`,
+        path: paths.dataDisplay.tables,
+      },
+    ],
+  },
 ];
 
 const Page = () => {
