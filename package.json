@@ -41,6 +41,7 @@
     "@mui/lab": "5.0.0-alpha.120",
     "@mui/material": "5.11.9",
     "@mui/system": "5.11.9",
+    "@mui/x-data-grid": "^6.0.2",
     "@mui/x-date-pickers": "5.0.18",
     "@react-pdf/renderer": "3.1.4",
     "@reduxjs/toolkit": "1.8.5",

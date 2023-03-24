@@ -6,6 +6,8 @@ import { Seo } from "src/components/seo";
 import Simple from "./forms/simple";
 import Stepper from "./forms/stepper";
 
+import { neutral } from "src/theme/colors";
+
 const forms = [
   {
     title: "Simple Form",
@@ -28,6 +30,7 @@ const Page = () => {
         sx={{
           flexGrow: 1,
           py: 8,
+          bgcolor: neutral[50],
         }}
       >
         <Container maxWidth="lg">

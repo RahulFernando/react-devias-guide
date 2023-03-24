@@ -4,6 +4,9 @@ import { Box, Container, Tab, Tabs, Stack, Divider } from "@mui/material";
 
 import { Seo } from "src/components/seo";
 import SimpleTable from "./tables/simple-table";
+import DataTable from "./tables/data-table";
+
+import { neutral } from "src/theme/colors";
 
 const tables = ["Simple Table", "Data Table"];
 
@@ -20,6 +23,7 @@ const Page = () => {
         sx={{
           flexGrow: 1,
           py: 8,
+          bgcolor: neutral[50],
         }}
       >
         <Container maxWidth="lg">
@@ -41,6 +45,7 @@ const Page = () => {
               <Divider sx={{ borderColor: "#dfe1e5" }} />
             </div>
             {current === 0 && <SimpleTable />}
+            {current === 1 && <DataTable />}
           </Stack>
         </Container>
       </Box>

@@ -14,6 +14,7 @@ import { RouterLink } from "src/components/router-link";
 import { Seo } from "src/components/seo";
 import { usePageView } from "src/hooks/use-page-view";
 import { paths } from "src/paths";
+import { neutral } from "src/theme/colors";
 
 const getSections = (paletteMode) => [
   {
@@ -70,6 +71,7 @@ const Page = () => {
         sx={{
           flexGrow: 1,
           py: 8,
+          bgcolor: neutral[50],
         }}
       >
         <Container maxWidth="lg">
