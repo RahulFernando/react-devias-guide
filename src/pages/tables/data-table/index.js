@@ -9,6 +9,7 @@ import Edit02Icon from "@untitled-ui/icons-react/build/esm/Edit02";
 import usePreview from "src/hooks/usePreview";
 
 import DataTableContainer from "./DataTableContainer";
+import Code from "./Code";
 
 const COLUMNS = [
   {
@@ -103,6 +104,7 @@ const DataTable = () => {
       {isPreview && (
         <DataTableContainer title="Employees" columns={columns} rows={DATA} />
       )}
+      {!isPreview && <Code />}
     </>
   );
 };
